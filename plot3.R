@@ -32,13 +32,13 @@ plot3 <- function(){
   
   plot(dt, sm1, type="l", xlab=strXlab, ylab=strYlab)
   lines(dt, sm2, col="red")
-  lines(dt, sm3, col="blue")
-    
-  legend(
-    "topright", 
-    lwd = 1,
-    col = c("black", "red", "blue"), 
-    legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+  lines(dt, sm3, col="blue")  
+  
+  legend(x="topright",          
+         legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),        
+         lwd = 1,
+         col = c("black", "red", "blue"),
+         cex = 1/2) 
   
   makePlot()
 }

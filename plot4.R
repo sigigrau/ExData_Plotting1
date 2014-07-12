@@ -57,12 +57,11 @@ plotC <- function(){
   lines(dt, sm2, col="red")
   lines(dt, sm3, col="blue")
   
-  par(ps = 8, cex = 1, cex.main = 1)
-  legend(
-    "topright", 
-    lwd = 1,
-    col = c("black", "red", "blue"), 
-    legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+  legend(x="topright",          
+         legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),        
+         lwd = 1,
+         col = c("black", "red", "blue"),
+         cex = 1/2) 
 }
 
 plotD <- function() {
