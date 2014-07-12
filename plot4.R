@@ -33,8 +33,8 @@ plotA <- function(){
 plotB <- function(){
   
   data <- getData()
-  strXlab = ""
-  strYlab = ""
+  strXlab = "datetime"
+  strYlab = "Voltage"
   plot(data$Date_time, 
        data$Voltage, 
        type="l", 
@@ -67,8 +67,8 @@ plotC <- function(){
 
 plotD <- function() {
   data <- getData()
-  strXlab = ""
-  strYlab = ""
+  strXlab = "datetime"
+  strYlab = "Global_reactive_power"
   plot(data$Date_time, 
        data$Global_reactive_power, 
        type="l", 
